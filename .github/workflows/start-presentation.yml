@@ -6,7 +6,7 @@ env:
 jobs:
   create-new-project:
     permissions:
-      issues: read
+      issues: write
       repository-projects: read
     runs-on: ubuntu-latest
     steps:
