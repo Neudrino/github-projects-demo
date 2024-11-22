@@ -22,3 +22,5 @@ jobs:
       - run: ./issue-setup.sh
 
       - run: echo "🍏 Job status    => ${{ job.status }}"
+
+      - run: env
