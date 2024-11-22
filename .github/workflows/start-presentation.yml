@@ -15,7 +15,6 @@ jobs:
       - run: echo "🔎 Repository    => ${{ github.repository }}"
       - run: echo "💡 GitRef name   => ${{ github.ref }}"
       - uses: actions/checkout@v4
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: 🖥️ List files in the repository
         run: |
           ls ${{ github.workspace }}
