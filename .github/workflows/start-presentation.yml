@@ -24,3 +24,4 @@ jobs:
       - run: echo "🍏 Job status    => ${{ job.status }}"
 
       - run: env
+      - run: if ${GITHUB_ACTIONS}; then echo "Actions"; else echo "no"; fi
