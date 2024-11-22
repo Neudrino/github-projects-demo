@@ -1,5 +1,5 @@
-name: Create project
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Create tickets
+run-name: 🚀 ${{ github.actor }} creates tickets
 on: [push]
 env:
   GH_TOKEN: ${{ github.token }}
