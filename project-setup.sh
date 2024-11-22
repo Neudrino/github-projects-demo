@@ -1,5 +1,7 @@
 set -x
 
+gh project list
+
 # Owner default is "@me" and does not usually need to be specified
 owner=${GITHUB_USER:-"Neudrino"}
 repo="github-projects-demo"
