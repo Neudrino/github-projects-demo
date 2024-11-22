@@ -2,7 +2,7 @@ set -x
 
 date=$(date -I)
 
-if ${GITHUB_ACTIONS}; then
+if [ -n "${GITHUB_ACTIONS}" ]; then
     title_suffix="on ${date}"
 else
     title_suffix=""
