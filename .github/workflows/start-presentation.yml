@@ -5,6 +5,9 @@ env:
   GH_TOKEN: ${{ github.token }}
 jobs:
   create-new-project:
+    permissions:
+      issues: read
+      repository-projects: read
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
