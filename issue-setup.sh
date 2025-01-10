@@ -1,6 +1,5 @@
 set -x
 
-my_project_title="Github Projects and Issues Demo"
 date=$(date -I)
 
 if [ -n "${GITHUB_ACTIONS}" ]; then
@@ -22,8 +21,7 @@ fi
 if gh issue view 1; then
     gh issue edit 1 \
         --body-file "issue-01-body.md" \
-        --title "Welcome to the Github Projects demo presentation ${title_suffix}" \
-        --add-project "${my_project_title}"
+        --title "Welcome to the Github Projects demo presentation ${title_suffix}"
 else
     gh issue create \
         --assignee "@me" \
