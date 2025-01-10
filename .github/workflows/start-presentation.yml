@@ -4,7 +4,7 @@ on: [push]
 env:
   GH_TOKEN: ${{ github.token }}
 jobs:
-  create-new-project:
+  setup-issues-and-prs:
     permissions:
       issues: write
       # This permission only gives access to "classic" projects.
