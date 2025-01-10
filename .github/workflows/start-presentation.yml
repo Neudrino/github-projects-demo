@@ -5,9 +5,11 @@ env:
   GH_TOKEN: ${{ github.token }}
 jobs:
   create-new-project:
-    permissions: write-all
-      # issues: write
-      # repository-projects: read
+    permissions:
+      issues: write
+      # This permission only gives access to "classic" projects.
+      # 2025-01 there is no permission to access new projects.
+      #repository-projects: read
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 Trigger event => ${{ github.event_name }}"
