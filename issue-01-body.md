@@ -10,11 +10,3 @@
 ## What now?
 
 1. Run [`project-setup.sh`](./project-setup.sh) to create a project.
-
-## Else
-
-**Push a commit to the repository!**
-
-```bash
-git commit --allow-empty -n -m "Start the Github demonstration!"
-```
