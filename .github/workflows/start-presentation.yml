@@ -5,9 +5,9 @@ env:
   GH_TOKEN: ${{ github.token }}
 jobs:
   create-new-project:
-    permissions:
-      issues: write
-      repository-projects: read
+    permissions: write-all
+      # issues: write
+      # repository-projects: read
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 Trigger event => ${{ github.event_name }}"
