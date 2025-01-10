@@ -17,7 +17,7 @@ fi
 # However, this workaround only works for local execution, not in GH actions
 #gh auth refresh -s project
 
-# Create new issue on project with initial instructions
+# Create new issue with initial instructions
 if gh issue view 1; then
     gh issue edit 1 \
         --body-file "issue-01-body.md" \
