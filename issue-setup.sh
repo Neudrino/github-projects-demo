@@ -15,8 +15,8 @@ fi
 # is only for classic projects.
 # https://github.com/cli/cli/issues/8798
 # suggests the following workaround.
-# This is usually only for interactive usage.
-gh auth refresh -s project
+# However, this workaround only works for local execution, not in GH actions
+#gh auth refresh -s project
 
 # Create new issue on project with initial instructions
 if gh issue view 1; then
