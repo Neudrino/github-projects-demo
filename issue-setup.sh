@@ -21,10 +21,10 @@ fi
 if gh issue view 1; then
     gh issue edit 1 \
         --body-file "issue-01-body.md" \
-        --title "Welcome to the Github Projects demo presentation ${title_suffix}"
+        --title "Welcome to the Github Projects demo ${title_suffix}"
 else
     gh issue create \
         --assignee "@me" \
         --body-file "issue-01-body.md" \
-        --title "Welcome to the Github Projects demo presentation"
+        --title "Welcome to the Github Projects demo"
 fi
